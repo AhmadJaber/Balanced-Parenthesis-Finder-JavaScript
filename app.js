@@ -17,15 +17,16 @@ function isBalanced() {
   let stack = [];
 
   let inputVal = inputParen.value;
-  let inputValArr = inputVal.split("");
 
-  inputValArr.forEach(val => {
+  for (let i=0; i<inputVal.length; i++) {
+    let val = inputVal[i];
+    
     if (openParen[val]) {
       stack.push(val);
     }else if (closedParen[val]) {
       if (openParen[stack.pop()] !== val) return printResult(false);
     }
-  });
+  }
 
   let result = stack.length === 0 ? true : false;
   printResult(result);
