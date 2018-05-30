@@ -19,3 +19,5 @@ Balancing Parenthesis Using a Small App. It is small fun app to find if parenthe
             if the character is not equal to the required closing parenthesis symbol, then you have an imbalanced string and should return false
 
   4. return an equality comparison between the stack length and 0 — if the stack is empty and we have looped through the whole input string, we can assume that we have a balanced string.
+
+<img src="images/app.png">
